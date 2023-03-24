@@ -59,7 +59,7 @@ MAIN = [
 ]
 X = [
     [
-        InlineKeyboardButton(text="", url=f"")
+        InlineKeyboardButton(text="Powered By Near", url=f"")
     ],
 ]
 PNG_BTN = [
