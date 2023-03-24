@@ -57,7 +57,11 @@ MAIN = [
         InlineKeyboardButton(text="HELP", callback_data="HELP"),
     ],
 ]
-X = "@swssy"
+X = [
+    [
+        InlineKeyboardButton(text="", url=f"")
+    ],
+]
 PNG_BTN = [
     [
          InlineKeyboardButton(
