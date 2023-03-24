@@ -30,9 +30,8 @@ Mukesh = Client(
     bot_token = BOT_TOKEN
 )
 START = f"""
-Yo! Dixita Here..
-Type:\
-\n@swssy Who is elon musk?
+Hi there! Just type `@swssy your question` to get started.
+Example: `@swssy Who is elon musk?`
 """
 xa = bytearray.fromhex("68 74 74 70 73 3A 2F 2F 67 69 74 68 75 62 2E 63 6F 6D 2F 4E 6F 6F 62 2D 6D 75 6B 65 73 68 2F 43 68 61 74 67 70 74 2D 62 6F 74").decode()
 axx = bytearray.fromhex("49  54 7A 5F 4C 45 47 45 4E 44 5F 43 4F 44 45 52").decode()
@@ -72,18 +71,13 @@ X = [
 PNG_BTN = [
     [
          InlineKeyboardButton(
-             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
+             text="ADD ME TO YOUR GROUP",
              url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-         ),
-     ],
-     [
-         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", 
-                              url=f"https://t.me/{SUPPORT_GRP}",
          ),
      ],
 ]
 SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', url=f"{SOURCE}")]])
-HELP_READ = "➻ ᴜsᴇ /chatgpt write a simple flask app in python.  \n\n **➻ ᴜsᴇ /ping ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n\n©️ @mr_sukkun**"
+HELP_READ = "Type `@swssy Write a python code to calculate the given numbers.`"
 HELP_BACK = [
      [
            InlineKeyboardButton(text="Qᴜᴇꜱᴛɪᴏɴ ᴛʜᴀᴛ ᴄʜᴀᴛɢᴘᴛ ᴄᴀɴ ꜱᴏʟᴠᴇ ", url=f"https://t.me/{UPDATE_CHNL}/528"),
@@ -101,7 +95,7 @@ async def restart(client, m: Message):
         accha = await m.reply_text(
                         text = f"{g}")
         await asyncio.sleep(0.2)
-        await accha.edit("ᴘɪɴɢ ᴘᴏɴɢ ꜱᴛᴀʀᴛɪɴɢ..")
+        await accha.edit("Just a sec...")
         await asyncio.sleep(0.2)
         await accha.delete()
         umm = await m.reply_sticker(
@@ -144,7 +138,7 @@ async def ping(client, message: Message):
         t = "ριиgιиg..."
         txxt = await message.reply(t)
         await asyncio.sleep(0.25)
-        await txxt.edit_text("ριиgιиg.....")
+        await txxt.edit_text("Just a sec...")
         await asyncio.sleep(0.35)
         await txxt.delete()
         end = datetime.now()
@@ -213,7 +207,7 @@ GIVE STAR TO THE REPO
     """)
     idle()
     Mukesh.stop()
-    print("Bot stopped. Bye !")
+    print("Bot stopped.")
 #-----------CREDITS -----------
 # telegram : @itz_legend_coder
 # github : noob-mukesh
