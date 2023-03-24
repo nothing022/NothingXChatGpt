@@ -59,9 +59,9 @@ MAIN = [
 ]
 X = [
     [
-        InlineKeyboardButton(text="DEVELOPER", url=f"https://t.me/{DEVELOPER}"),
+        InlineKeyboardButton(text="DEVELOPER", url=f"https://t.me/swssy"),
         
-        InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_GRP}"),
+        InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/+sXXMMsyYyNphN2I1"),
     ]
     ]
     
@@ -128,17 +128,17 @@ async def source(bot, m):
 @Mukesh.on_message(filters.command(["ping"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
-        t = "Just a sec..."
+        t = "**🔁|Just a sec...**"
         txxt = await message.reply(t)
         await asyncio.sleep(0.25)
-        await txxt.edit_text("Done ✅")
+        await txxt.edit_text("**✅|Done**")
         await asyncio.sleep(0.35)
         await txxt.delete()
         end = datetime.now()
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"Pong!",
+                             caption=f"**Pong!**",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
