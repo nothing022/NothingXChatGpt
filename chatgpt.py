@@ -44,7 +44,7 @@ Not available.
 """
 
 
-x=["❤️","ON","YOUR","MARK","GET","SET","GO!"]
+x=["❤️"]
 g=choice(x)
 MAIN = [
     [
@@ -77,7 +77,7 @@ SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('SOURCE', url=f"{SO
 HELP_READ = "Type `@swssy Write a python code to calculate the given numbers.`"
 HELP_BACK = [
     [
-           InlineKeyboardButton(text="ʙᴀᴄᴋ ", callback_data="HELP_BACK"),
+           InlineKeyboardButton(text="BACK", callback_data="HELP_BACK"),
     ],
 ]
 
@@ -131,20 +131,20 @@ async def ping(client, message: Message):
         t = "Just a sec..."
         txxt = await message.reply(t)
         await asyncio.sleep(0.25)
-        await txxt.edit_text("Just a sec...")
+        await txxt.edit_text("Alive!")
         await asyncio.sleep(0.35)
         await txxt.delete()
         end = datetime.now()
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME}) ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [ᴍᴜᴋᴇsʜ](https://t.me/itz_legend_coder)||",
+                             caption=f"Pong!",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
 #  main   
 openai.api_key = OPENAI_KEY
-@Mukesh.on_message(filters.command(["@swssy"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
+@Mukesh.on_message(filters.command(["@swssy","swssy"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
     
     try:
@@ -152,7 +152,7 @@ async def chat(bot, message):
         await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
             await message.reply_text(
-            "Example:**\n\n`/chatgpt Where is TajMahal?`")
+            "Example:**\n\n`@swssy Who is elon musk?`")
         else:
 
             a = message.text.split(' ', 1)[1]
@@ -164,7 +164,7 @@ async def chat(bot, message):
             x=resp['choices'][0]["message"]["content"]
             end_time = time.time()
             telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ᴍs"
-            await message.reply_text(f"{message.from_user.first_name} ᴀꜱᴋᴇᴅ:\n\n {a} \n\n {BOT_NAME} ᴀɴꜱᴡᴇʀᴇᴅ:-\n\n {x}\n\n✨ᴛɪᴍᴇ ᴛᴀᴋᴇɴ  {telegram_ping} \n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
+            await message.reply_text(f"{x}", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
     except Exception as e:
         await message.reply_text(f"**ᴇʀʀᴏʀ:    {e} ")
 
@@ -194,8 +194,7 @@ if __name__ == "__main__":
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
-    print(f"""JOIN  @MR_SUKKUN
-GIVE STAR TO THE REPO 
+    print(f"""GIVE STAR TO THE REPO 
  {BOT_NAME} ɪs ᴀʟɪᴠᴇ!  
     """)
     idle()
