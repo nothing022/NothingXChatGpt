@@ -57,14 +57,6 @@ MAIN = [
         InlineKeyboardButton(text="HELP", callback_data="HELP"),
     ],
 ]
-X = [
-    [
-        InlineKeyboardButton(text="DEVELOPER", url=f"https://t.me/swssy"),
-        
-        InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/+sXXMMsyYyNphN2I1"),
-    ]
-    ]
-    
 PNG_BTN = [
     [
          InlineKeyboardButton(
