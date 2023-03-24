@@ -30,8 +30,8 @@ Mukesh = Client(
     bot_token = BOT_TOKEN
 )
 START = f"""
-Hi there! Just type `@swssy your question` to get started.
-Example: `@swssy Who is elon musk?`
+Hui! Just type `Shona your question` to get started.
+Example: `Shona Who is elon musk?`
 """
 xa = bytearray.fromhex("68 74 74 70 73 3A 2F 2F 67 69 74 68 75 62 2E 63 6F 6D 2F 4E 6F 6F 62 2D 6D 75 6B 65 73 68 2F 43 68 61 74 67 70 74 2D 62 6F 74").decode()
 axx = bytearray.fromhex("49  54 7A 5F 4C 45 47 45 4E 44 5F 43 4F 44 45 52").decode()
@@ -49,32 +49,32 @@ g=choice(x)
 MAIN = [
     [
         InlineKeyboardButton(
-            text="ADD ME TO YOUR GROUP",
+            text="𝙰𝙳𝙳 𝙼𝙴",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="HELP", callback_data="HELP"),
+        InlineKeyboardButton(text="𝙷𝙴𝙻𝙿", callback_data="HELP"),
     ],
 ]
 X = [
     [
-        InlineKeyboardButton(text="ㅤ", url=f"t.me/swssy")
+        InlineKeyboardButton(text="ㅤ", url=f"t.me/Shona_AI")
     ],
 ]
 PNG_BTN = [
     [
          InlineKeyboardButton(
-             text="ADD ME TO YOUR GROUP",
+             text="𝙰𝙳𝙳 𝙼𝙴",
              url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
          ),
      ],
 ]
 SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('SOURCE', url=f"{SOURCE}")]])
-HELP_READ = "Type `@swssy Write a python code to calculate the given numbers.`"
+HELP_READ = "Type `Shona Write a python code to calculate the given numbers.`"
 HELP_BACK = [
     [
-           InlineKeyboardButton(text="BACK", callback_data="HELP_BACK"),
+           InlineKeyboardButton(text="𝙱𝙰𝙲𝙺", callback_data="HELP_BACK"),
     ],
 ]
 
@@ -125,10 +125,10 @@ async def source(bot, m):
 @Mukesh.on_message(filters.command(["ping"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
-        t = "**🔁|Just a sec...**"
+        t = "**🔁|𝙱𝙰𝙱𝚄 𝙴𝙺 𝚂𝙴𝙲 𝚁𝚄𝙺𝙾 😘...**"
         txxt = await message.reply(t)
         await asyncio.sleep(0.25)
-        await txxt.edit_text("**✅|Done**")
+        await txxt.edit_text("**✅|𝙷𝙾𝙶𝚈𝙰 😍**")
         await asyncio.sleep(0.35)
         await txxt.delete()
         end = datetime.now()
@@ -141,7 +141,7 @@ async def ping(client, message: Message):
 
 #  main   
 openai.api_key = OPENAI_KEY
-@Mukesh.on_message(filters.command(["@swssy","swssy","SwssyBot"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
+@Mukesh.on_message(filters.command(["Shona","shona","@Shona_Ai"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
     
     try:
@@ -149,7 +149,7 @@ async def chat(bot, message):
         await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
             await message.reply_text(
-            "Example:**\n\n`@swssy Who is elon musk?`")
+            "Example:**\n\n`Shona Who is elon musk?`")
         else:
 
             a = message.text.split(' ', 1)[1]
