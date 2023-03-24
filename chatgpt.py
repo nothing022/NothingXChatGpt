@@ -59,7 +59,7 @@ MAIN = [
 ]
 X = [
     [
-        InlineKeyboardButton(text="❤", url=f"t.me/swssy")
+        InlineKeyboardButton(text="ㅤ", url=f"t.me/swssy")
     ],
 ]
 PNG_BTN = [
