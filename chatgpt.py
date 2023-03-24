@@ -40,31 +40,28 @@ SOURCE = xa
 UPDATE_CHNL = xxc
 DEVELOPER = axx
 SOURCE_TEXT = f"""
-๏ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}]
-➻ ᴀɴ ᴏᴘᴇɴ-ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛɢᴘᴛ.
-──────────────────
-ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ
+Not available.
 """
 
 
-x=["❤️","🎉","✨","🪸","🎉","🎈","🎯"]
+x=["❤️","ON","YOUR","MARK","GET","SET","GO!"]
 g=choice(x)
 MAIN = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
+            text="ADD ME TO YOUR GROUP",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴍᴅs ", callback_data="HELP"),
+        InlineKeyboardButton(text="HELP", callback_data="HELP"),
     ],
 ]
 X = [
     [
-        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/{DEVELOPER}"),
+        InlineKeyboardButton(text="DEVELOPER", url=f"https://t.me/{DEVELOPER}"),
         
-        InlineKeyboardButton(text=" ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GRP}"),
+        InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_GRP}"),
     ]
     ]
     
@@ -76,13 +73,9 @@ PNG_BTN = [
          ),
      ],
 ]
-SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', url=f"{SOURCE}")]])
+SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('SOURCE', url=f"{SOURCE}")]])
 HELP_READ = "Type `@swssy Write a python code to calculate the given numbers.`"
 HELP_BACK = [
-     [
-           InlineKeyboardButton(text="Qᴜᴇꜱᴛɪᴏɴ ᴛʜᴀᴛ ᴄʜᴀᴛɢᴘᴛ ᴄᴀɴ ꜱᴏʟᴠᴇ ", url=f"https://t.me/{UPDATE_CHNL}/528"),
-           
-     ],
     [
            InlineKeyboardButton(text="ʙᴀᴄᴋ ", callback_data="HELP_BACK"),
     ],
@@ -127,7 +120,7 @@ async def restart(client, message):
                         text = HELP_READ,
                         reply_markup= InlineKeyboardMarkup(HELP_BACK),
        )
-@Mukesh.on_message(filters.command(['source', 'repo'], prefixes=["","+", ".", "/", "-", "?", "$"]))
+@Mukesh.on_message(filters.command(['FAJIDFAJAHIGANIDFNAIFDJA', 'AFNDOAFIANIDBAOGAOHFO'], prefixes=["","+", ".", "/", "-", "?", "$"]))
 async def source(bot, m):
     
     await m.reply_photo(START_IMG, caption=SOURCE_TEXT, reply_markup=SOURCE_BUTTONS)
@@ -135,7 +128,7 @@ async def source(bot, m):
 @Mukesh.on_message(filters.command(["ping","alive"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
-        t = "ριиgιиg..."
+        t = "Just a sec..."
         txxt = await message.reply(t)
         await asyncio.sleep(0.25)
         await txxt.edit_text("Just a sec...")
@@ -151,7 +144,7 @@ async def ping(client, message: Message):
 
 #  main   
 openai.api_key = OPENAI_KEY
-@Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
+@Mukesh.on_message(filters.command(["@swssy"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
     
     try:
