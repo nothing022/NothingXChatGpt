@@ -57,11 +57,7 @@ MAIN = [
         InlineKeyboardButton(text="HELP", callback_data="HELP"),
     ],
 ]
-X = [
-    [
-        InlineKeyboardButton(text="Say Thank You To", url=f"https://t.me/swssy")
-    ],
-]
+X = "@swssy"
 PNG_BTN = [
     [
          InlineKeyboardButton(
