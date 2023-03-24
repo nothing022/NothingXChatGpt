@@ -125,13 +125,13 @@ async def source(bot, m):
     
     await m.reply_photo(START_IMG, caption=SOURCE_TEXT, reply_markup=SOURCE_BUTTONS)
 #  alive
-@Mukesh.on_message(filters.command(["ping","alive"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
+@Mukesh.on_message(filters.command(["ping"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
         t = "Just a sec..."
         txxt = await message.reply(t)
         await asyncio.sleep(0.25)
-        await txxt.edit_text("Alive!")
+        await txxt.edit_text("Done ✅")
         await asyncio.sleep(0.35)
         await txxt.delete()
         end = datetime.now()
