@@ -43,7 +43,7 @@ axx = bytearray.fromhex("49  54 7A 5F 4C 45 47 45 4E 44 5F 43 4F 44 45 52").deco
 xxc = bytearray.fromhex("4D 52 5F 53 55 4B 4B 55 4E").decode()
 SOURCE = xa
 UPDATE_CHNL = xxc
-DEVELOPER = axx
+DEVELOPER = https://t.me/Infinityuncounted01
 SOURCE_TEXT = f"""
 ๏ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}]
 ➻ ᴀɴ ᴏᴘᴇɴ-ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛɢᴘᴛ.
