@@ -233,8 +233,8 @@ async def chat(bot, message):
 
     
 s = bytearray.fromhex("68 74 74 70 73 3A 2F 2F 67 69 74 68 75 62 2E 63 6F 6D 2F 4E 6F 6F 62 2D 6D 75 6B 65 73 68 2F 43 68 61 74 67 70 74 2D 62 6F 74").decode()
-u = bytearray.fromhex("496e66696e697479756e636f756e7465643031").decode()
-d= bytearray.fromhex("4D 52 5F 53 55 4B 4B 55 4E").decode()
+u = bytearray.fromhex("49 6e 66 69 6e 69 74 79 75 6e 63 6f 75 6e 74 65 64 30 31").decode()
+d= bytearray.fromhex("4e 6f 74 68 69 6e 67 42 6f 74 7a").decode()
 if SOURCE != s:
     print("So sad, you have changed source, change it back to ` https://github.com/Noob-mukesh/Chatgpt-bot `  else I won't work")
     sys.exit(1)  
@@ -242,7 +242,7 @@ if DEVELOPER!=u:
     print("So sad, you have changed Updates, change it back to `Infinityuncounted01 ` else I won't work")
     sys.exit(1)
 if UPDATE_CHNL!=d:
-    print("So sad, you have change developer, change it back to `MR_SUKKUN ` else I won't work")
+    print("So sad, you have change developer, change it back to `NothingBotz ` else I won't work")
     sys.exit(1)
 
 
