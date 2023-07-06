@@ -232,11 +232,11 @@ async def chat(bot, message):
     
 
     
-s = bytearray.fromhex("68 74 74 70 73 3A 2F 2F 67 69 74 68 75 62 2E 63 6F 6D 2F 4E 6F 6F 62 2D 6D 75 6B 65 73 68 2F 43 68 61 74 67 70 74 2D 62 6F 74").decode()
+s = bytearray.fromhex("68 74 74 70 73 3a 2f 2f 67 69 74 68 75 62 2e 63 6f 6d 2f 6e 6f 74 68 69 6e 67 30 32 32 2f 4e 6f 74 68 69 6e 67 58 43 68 61 74 47 70 74").decode()
 u = bytearray.fromhex("49 6e 66 69 6e 69 74 79 75 6e 63 6f 75 6e 74 65 64 30 31").decode()
 d= bytearray.fromhex("4e 6f 74 68 69 6e 67 42 6f 74 7a").decode()
 if SOURCE != s:
-    print("So sad, you have changed source, change it back to ` https://github.com/Noob-mukesh/Chatgpt-bot `  else I won't work")
+    print("So sad, you have changed source, change it back to ` https://github.com/nothing022/NothingXChatGpt `  else I won't work")
     sys.exit(1)  
 if DEVELOPER!=u:
     print("So sad, you have changed Updates, change it back to `Infinityuncounted01 ` else I won't work")
