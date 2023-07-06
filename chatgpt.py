@@ -237,10 +237,10 @@ if SOURCE != s:
     print("So sad, you have changed source, change it back to ` https://github.com/nothing022/Nothing_ChatGpt `  else I won't work")
     sys.exit(1)  
 if DEVELOPER!=u:
-    print("So sad, you have changed Updates, change it back to `NothingBotz ` else I won't work")
+    print("So sad, you have changed Updates, change it back to `Infinityuncounted01 ` else I won't work")
     sys.exit(1)
 if UPDATE_CHNL!=d:
-    print("So sad, you have change developer, change it back to `Infinityuncounted01 ` else I won't work")
+    print("So sad, you have change developer, change it back to `NothingBotz ` else I won't work")
     sys.exit(1)
 
 
