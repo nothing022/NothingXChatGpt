@@ -114,10 +114,11 @@
 
 ### ᴄʀᴇᴅɪᴛs 
 # 
-<b> [─╼⃝𖠁 Nᴏᴛʜɪɴɢ... 𖠁⃝╾─•](https://t.me/Infinityuncounted01) <br> <br>
+<b> [─╼⃝𖠁 ᴍᴜᴋᴇsʜ 𖠁⃝╾─•](https://t.me/Legend_Coder) <br> <br>
  [­ 𝔼𝕣𝕖𝕟](https://telegram.me/WH0907)  </br> <br>
+ [Nᴏᴛʜɪɴɢ...](https://t.me/Infinityuncounted01)
  [ [🇮🇳]◊⃟_ѕнιиιиg〆ѕταʀـϟ ⃝⃟🥀 ⃝࿐](https://telegram.me/NotLobe)<br>
-<details>
+ <details>
 <summary><i>ᴀ ᴍᴇssᴀɢᴇ ғᴏʀ ʏᴏᴜ!</i></summary>
 <p><i> ᴅᴏɴ'ᴛ  ғᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴛʜᴇ 🌠</i></p>
 </details>
