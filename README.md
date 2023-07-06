@@ -116,7 +116,7 @@
 # 
 <b> [─╼⃝𖠁 ᴍᴜᴋᴇsʜ 𖠁⃝╾─•](https://t.me/Legend_Coder) <br> <br>
  [­ 𝔼𝕣𝕖𝕟](https://telegram.me/WH0907)  </br> <br>
- [Nᴏᴛʜɪɴɢ...](https://t.me/Infinityuncounted01)
+ [Nᴏᴛʜɪɴɢ...](https://t.me/Infinityuncounted01)<br>
  [ [🇮🇳]◊⃟_ѕнιиιиg〆ѕταʀـϟ ⃝⃟🥀 ⃝࿐](https://telegram.me/NotLobe)<br>
  <details>
 <summary><i>ᴀ ᴍᴇssᴀɢᴇ ғᴏʀ ʏᴏᴜ!</i></summary>
