@@ -38,9 +38,9 @@ START = f"""
 
 ๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help
 """
-xa = bytearray.fromhex("68 74 74 70 73 3A 2F 2F 67 69 74 68 75 62 2E 63 6F 6D 2F 4E 6F 6F 62 2D 6D 75 6B 65 73 68 2F 43 68 61 74 67 70 74 2D 62 6F 74").decode()
-axx = bytearray.fromhex("49  54 7A 5F 4C 45 47 45 4E 44 5F 43 4F 44 45 52").decode()
-xxc = bytearray.fromhex("4D 52 5F 53 55 4B 4B 55 4E").decode()
+xa = bytearray.fromhex("68 74 74 70 73 3a 2f 2f 67 69 74 68 75 62 2e 63 6f 6d 2f 6e 6f 74 68 69 6e 67 30 32 32 2f 4e 6f 74 68 69 6e 67 58 43 68 61 74 47 70 74").decode()
+axx = bytearray.fromhex("49 6e 66 69 6e 69 74 79 75 6e 63 6f 75 6e 74 65 64 30 31").decode()
+xxc = bytearray.fromhex("4e 6f 74 68 69 6e 67 42 6f 74 7a").decode()
 SOURCE = xa
 UPDATE_CHNL = xxc
 DEVELOPER = axx
